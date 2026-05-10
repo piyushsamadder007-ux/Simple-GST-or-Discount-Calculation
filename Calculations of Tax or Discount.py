@@ -1,21 +1,16 @@
-print("What you want to calculate,GST or Discount? ")
-print("Where G stands for GST and D stands for Discount")
+print("What you want to calculate,GST or Discount?\nWhere G stands for GST and D stands for Discount")
 a=input("Text Here G or D: ")
-if a=="G":
-    print("Welcome into a GST calculator")
-    print("here, you can just calculate the GST")
+if a=="G"or a=="g":
+    print("Welcome into a GST calculator\nHere, you can just calculate the GST")
     n1=float(input("Enter the price of the item: "))
     n2=float(input("quantity: "))
     n3=float(input("GST percentage: "))
-    print("The gross amount is: ", n1+(n1*n2)*n3/100)
-    print("Where, your tax amount is: ", (n1*n2)*n3/100)
-elif a=="D":
-    print("Welcome into a Discount calculator")
-    print("here, you can just calculate the Discount")
+    print("The gross amount is: ", n1+(n1*n2)*n3/100,"\nWhere, your GST amount is: ", (n1*n2)*n3/100)
+elif a=="D"or a=="d":
+    print("Welcome into a Discount calculator\nHere, you can just calculate the Discount")
     n1=float(input("Enter the price of the item: "))
     n2=float(input("quantity: "))
     n3=float(input("Discount percentage: "))
-    print("The gross amount is: ", n1-(n1*n2)*n3/100)
-    print("Where, your discount amount is: ", (n1*n2)*n3/100)
+    print("The gross amount is: ", n1-(n1*n2)*n3/100,"\nWhere, your discount amount is: ", (n1*n2)*n3/100)
 else:    print("Type in capital letters, try again",a)
 print(input("Press Enter to exit"))
