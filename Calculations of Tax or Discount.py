@@ -12,6 +12,4 @@ elif a=="D" or a=="d":
     n2=float(input("Quantity: "))
     n3=float(input("Discount percentage: "))
     print("The gross amount is: ", n1-(n1*n2)*n3/100,"\nWhere, your discount amount is: ", (n1*n2)*n3/100)
-else:    
-    print("Type G or D, Try again")
-print(input("Press Enter to exit"))
+print(input("Press Enter to exit: "))
