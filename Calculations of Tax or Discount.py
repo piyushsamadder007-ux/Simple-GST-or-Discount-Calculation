@@ -2,7 +2,7 @@ print("What do you want to calculate? GST or Discount?\nHere G stands for GST an
 a=input("enter to continue: ")
 while a=="":
     if a=="":
-        b=input("Type G / D or enter to close: ")
+        b=input("\nType G / D or enter to close: ")
     if b=="G" or b=="g":
         print("\nWelcome to GST calculator\nHere, you can calculate the GST")
         n1=float(input("\nEnter the price of the item: "))
